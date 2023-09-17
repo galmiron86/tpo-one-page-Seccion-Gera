@@ -256,8 +256,22 @@ footer p{
 footer .container{
     height: 150px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    text-align: center;
+}
+
+.iconos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.iconos img{
+    width: 5vw;
+    height: 5vh;
+    margin-top: 90px;    
 }
 
 .formulario{
@@ -402,11 +416,13 @@ footer .container{
         display: flex;
         flex-direction: column;
         padding: 1.6vh 7.3vw;
-        border-radius: 5px;
-        
+        border-radius: 7px;
+        border: 2px solid blueviolet;
         margin-bottom: 20px;
         
     }
+
+    
     .buttons {
         
         display: flex;
@@ -587,8 +603,27 @@ footer .container{
     }
 
     footer .container{
-        justify-content: flex-end;
+        justify-content: space-between;
+        
     }
+
+    .iconos{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 9px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        
+        
+    }
+    .iconos img{
+        width: 4vw;
+        height: 8vh;
+        margin-top:10px;   
+         
+    }
+    
 }
 
 @media (min-width: 1200px) {
