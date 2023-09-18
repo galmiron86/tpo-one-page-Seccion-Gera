@@ -259,6 +259,7 @@ footer .container{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    
 }
 
 .iconos{
@@ -273,6 +274,17 @@ footer .container{
     height: 5vh;
     margin-top: 90px;    
 }
+
+.texto__footer p{
+    opacity: .9;
+    font-weight: bold;
+    margin-left: 20px;
+    
+    
+}
+
+
+
 
 .formulario{
     display: flex;
@@ -603,7 +615,13 @@ footer .container{
     }
 
     footer .container{
+        height: 150px;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 80px;
+        flex-direction: row;
         justify-content: space-between;
+        
         
     }
 
