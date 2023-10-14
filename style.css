@@ -29,10 +29,15 @@ button{
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color: white;
     background-color: blueviolet;
+    cursor: pointer;
 }
 
 button:hover{
     background-color: rgb(101, 33, 165);
+}
+
+.button__aplica{
+    display: none;
 }
 
 .button__registro{
@@ -46,6 +51,10 @@ button:hover{
     color: white;
     background-color: blueviolet;
 
+}
+
+.button__anotateYa{
+    margin-top: 50px;
 }
 
 .container{
@@ -424,6 +433,21 @@ footer .container{
        
 
     }
+    
+    .button__aplica{
+        display: block;
+        cursor: pointer;
+    }
+
+    .button__aplica a{
+
+        color: white;
+    }
+
+    .button__anotateYa{
+        margin-top: 50px;
+    }
+
 
     .buttons input{
         padding: 1.6vh 2.5vw;

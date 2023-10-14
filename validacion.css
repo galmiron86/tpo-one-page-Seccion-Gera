@@ -13,7 +13,7 @@ body{
     font-family: 'Roboto', sans-serif;
 } 
 
-h1{ font-size: 3em;}
+h1{ font-size: 2.6em;}
 h2{ font-size: 2.7em;}
 h3{ font-size: 2em;}
 p{ font-size: 1.25em;}
@@ -74,13 +74,16 @@ header a:hover{
 }
 
 
+
 form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid lightslategray;
-    border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1vh 7vw ;
+        border-radius: 5px;
+        border: 1px solid lightslategray;
+        padding: 5vh 5vw;
+        
 }
 
 label {
@@ -109,6 +112,7 @@ input[type="submit"] {
         width: 90%;
         margin-top: 20px;
         padding: 10px;
+        border-radius: 5px;
     
 }
 
@@ -157,9 +161,69 @@ footer .container{
         padding-bottom: 0;
         padding-right: 20px;
     }       
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 1vh 29vw ;
+        border-radius: 5px;
+    
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+    }
+    
+    input[type="submit"] {
+        
+            background-color: blueviolet;
+            color: white;
+            font-weight: bold;
+            transition: 300ms;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        
+    }
+    
+    input[type="submit"]:hover {
+        background-color: rgb(154, 95, 209);
+    }
+    
         
     footer .container{
         justify-content: flex-end;
     }
+
+
+h1{ font-size: 3em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
 }
 
+@media (min-width: 1200px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 1vh 31vw ;
+        border-radius: 5px;
+    
+    }
+}
