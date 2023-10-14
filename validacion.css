@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    text-decoration: none;
+} 
+
+html{ 
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+} 
+
+h1{ font-size: 3em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+
+header{
+    background-color: rgb(245,245,245);
+
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+.titulo {
+    color: blueviolet;
+}
+
+.titulo:hover{
+    color: rgb(0, 0, 0);
+}
+
+.titulo__form{
+    color: blueviolet;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    
+        background-color: blueviolet;
+        color: white;
+        font-weight: bold;
+        transition: 300ms;
+        cursor: pointer;
+        width: 90%;
+        margin-top: 20px;
+        padding: 10px;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(154, 95, 209);
+}
+
+footer{
+    background-color: rgb(230,230,230);
+    
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+
+    body{
+        display: grid;
+        min-height: 100vh;
+        grid-template-rows: auto 1fr auto;
+    }
+    
+    header{
+        position: relative;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }       
+        
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+

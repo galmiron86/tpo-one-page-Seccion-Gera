@@ -92,6 +92,14 @@ header a:hover{
     color: blueviolet;
 }
 
+.titulo {
+    color: blueviolet;
+}
+
+.titulo:hover{
+    color: rgb(0, 0, 0);
+}
+
 #hero{
     display: flex;
     align-items: center;

@@ -3,13 +3,13 @@
   <head> 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../validacion.css"/>
     <title>Clases en linea</title>
   </head> 
   <body>
     <header>
       <div class="container">  
-        <p class="logo">Clases en linea</p>
+        <p class="logo"><a href="../index.html" class="titulo">Clases en linea</a></p>
         <nav>
           <a href="../index.html#somos-proya">Quienes somos</a>
           <a href="../index.html#nuestros-programas">Nuestros Programas</a>
@@ -19,35 +19,25 @@
         </nav>
       </div>
     </header>
-      <div class="formulario">
-        <form action="formulario" method="post"><h3>Registro</h3>
-        
-        <br><br>
 
-        <label for="nombre"></label>
-        <input type="text" name="name" id="name" placeholder="Nombre" required>
-        
-        <br><br>
+    <h1 class="titulo__form">Formulario de registro</h1>
 
-        <label for="apellido"></label>
-        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
 
-        <br><br>
-        
-        <label for="email"></label>
-        <input type="email" name="email" id="email" placeholder="Email" required>
-        
-        <br><br>
+    <form id="formulario" onsubmit="return validarFormulario()" action="https://formspree.io/f/xvojdbzq" method="post">
+      <label for="nombre">Primer Nombre:</label>
+      <input type="text" id="nombre" name="nombre"><br>
 
-        <label for="password"></label>
-        <input type="password" name="password" id="password" placeholder="Contraseña" required>
-        
-        <br><br>
+      <label for="dni">DNI:</label>
+      <input type="text" id="dni" name="dni"><br>
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion"><br>
+
+      <input type="submit" value="Enviar">
+  </form>
+
 
         
-        <input type="submit" value="Registrese" class="button__registro">
-
-        </form>
         
         <br><br>
     </div>
@@ -56,6 +46,7 @@
           <p>&copy; Codo a Codo 2023</p>
       </div>
       </footer>
+      <script src="../js/validacion.js"></script>
     </body>
     </html>
     
